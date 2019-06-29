@@ -1,6 +1,8 @@
 $primary-color: #444;
 //$secondary-color: #EECE1A;
-$secondary-color: #78c7f5; 
+//$secondary-color: #78c7f5;
+$secondary-color: #FFA500;
+$third-color:  #78c7f5;
 $show-home-image: true;
 $home-image: url(../img/backImage.jpg);
 $background-opacity: 0.9;
@@ -27,5 +29,27 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Media Query Mixins - Small, Medium and Large 
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px){
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
