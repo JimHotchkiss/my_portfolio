@@ -1,16 +1,15 @@
-$primary-color: #1A1A1D;
+// Twitter Dim
+$primary-color: #1f252f;
+// $primary-color: #1a1a1d;
 // $secondary-color: #86B3D1;
-$secondary-color: #5DA0EE
-;
+// Twitter Blue
+$secondary-color: #5da0ee;
+// Emoji Yellow
+// $secondary-color: #e8c354;
 
 // Orginal colors
 //$primary-color: #444;
 //$secondary-color: #1DA1F2;
-
-// Other Choices 
-//$secondary-color: #EECE1A
-//$secondary-color: #78c7f5;
-//$secondary-color: rgb(236, 197, 124);
 $show-home-image: true;
 $home-image: url(../img/background2.jpg);
 $background-opacity: 0.9;
@@ -25,9 +24,9 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      
-      &:after{
-        content:'';
+
+      &:after {
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -42,14 +41,14 @@ $background-opacity: 0.9;
 
 // Set Text Color
 @function set-text-color($color) {
-  @if(lightness($color) > 40) {
+  @if (lightness($color) > 40) {
     @return #000000;
   } @else {
     @return #ffffff;
   }
 }
 
-// Media Query Mixins - Small, Medium and Large 
+// Media Query Mixins - Small, Medium and Large
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
@@ -61,7 +60,7 @@ $background-opacity: 0.9;
   }
 }
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px){
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
