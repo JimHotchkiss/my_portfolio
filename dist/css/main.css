@@ -277,8 +277,16 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
-    font-size: 56px; }
+    font-size: 4rem; }
   main#home .sm-heading {
-    font-size: large; }
+    font-size: 1.25rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #about .lg-heading {
+    font-size: 4rem; }
+  #about .text-secondary {
+    font-size: 4rem; }
+  #about .sm-heading {
+    font-size: 1.25rem; }
+  .about-info .bio-image {
+    width: 14rem; } }
